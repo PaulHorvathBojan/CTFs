@@ -1,0 +1,2 @@
+1. Open VaultDoorTraining.java in vim.
+2. Copy flag from checkPassword method; wrap it around picoCTF{}.
