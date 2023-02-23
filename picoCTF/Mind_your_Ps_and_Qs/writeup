@@ -1,0 +1,7 @@
+1. From the info provided, can expect RSA public key modulus (n) to be small and hence easy to factorize.
+2. Put n value into factordb.com and retrieve n's prime factors, p and q.
+3. Calculate phi(n) = (p - 1) * (q - 1).
+4. Calculate inverse of exponent e mod phi.
+5. Calculate ciphertext c raised to e^(-1) mod n.
+6. Print result, get big number.
+7. Convert result to bytes -> flag.

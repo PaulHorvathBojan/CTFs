@@ -1,0 +1,4 @@
+1. Run 'cat pw.txt' in terminal.
+2. Copy output text.
+3. Run 'python ende.py -d flag.txt.en' in terminal.
+4. Paste when prompted for password -> flag.

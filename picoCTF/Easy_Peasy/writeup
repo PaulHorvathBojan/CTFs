@@ -1,0 +1,4 @@
+1. Observe that the max size of the OTP is 50000 and the keys are used by rotation.
+2. The idea is to use up all the keyspace and reuse exactly the length of the ciphertext, then XOR and recover plain.
+3. Script in expl.py.
+4. Observation: flag is not in the expected format (not picoCTF{} wrap), and must be unhexed.

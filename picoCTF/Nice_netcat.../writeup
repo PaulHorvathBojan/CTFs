@@ -1,0 +1,3 @@
+1. Run 'nc mercury.picoctf.net 22342' in terminal -> get a bunch of numbers separated by returns.
+2. Copy numbers, put them into cyberchef (https://gchq.github.io/CyberChef/) on magic setting -> flag.
+(They are ASCII numbers of printable characters, and cyberchef can convert them  quicker than me).

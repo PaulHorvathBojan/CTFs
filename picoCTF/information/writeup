@@ -1,0 +1,10 @@
+1. Run 'file cat.jpg' in terminal  -> file is a jpg.
+2. Run 'binwalk cat.jpg' in terminal -> no hidden files.
+3. Run 'strings cat.jpg | grep 'pico'' -> nothing.
+4. Run 'strings cat.jpg | grep 'pic'' -> nothing.
+5. Run 'strings cat.jpg | grep 'pi'' -> relatively useless (some lines appear, but no definitive information gained).
+6. Run 'vim cat.jpg' -> weird header; fragments standing out:
+	<?xpacket begin='ï»¿' id='W5M0MpCehiHzreSzNTczkc9d'?>
+	<cc:license rdf:resource='cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9'/>
+7. Put 'W5M0MpCehiHzreSzNTczkc9d' into cyberchef (https://gchq.github.io/CyberChef/) on magic setting -> inconclusive.
+8. Put 'cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9' into cyberchef on magic -> scroll down to flag.

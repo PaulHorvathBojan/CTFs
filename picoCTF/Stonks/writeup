@@ -1,0 +1,2 @@
+1. Essentially we're looking at a format string exploit.
+2. Exploit script in expl.py (tried to add "-%x"s until flag was printed).

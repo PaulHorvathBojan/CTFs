@@ -1,0 +1,4 @@
+Despite what some people might say, it was not as boring as advertised.
+1. Run the shell (must have uuencode and sharutils).
+2. Subsequently dearchive and decompress with appropriate utilities until a final hexflag remains.
+3. Use (first) google search result to transform hexflag to string -> flag.

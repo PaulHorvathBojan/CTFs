@@ -1,0 +1,9 @@
+1. ssh into container.
+2. ls
+3. cat first part of flag
+4. cat instructions for second part
+5. cd /
+6. cat 2nd part of flag
+7. cat instructions for 3rd part
+8. cd
+9. cat 3rd part of flag -> flag

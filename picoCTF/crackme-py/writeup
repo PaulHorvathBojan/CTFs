@@ -1,0 +1,3 @@
+1. Run 'vim crackme.py' in terminal.
+2. Add 'decrypt_secret(bezos_cc_secret)' as final line, save and close.
+3. Run crackme.py with two random inputs -> flag. (could even remove the choose_greatest() line)

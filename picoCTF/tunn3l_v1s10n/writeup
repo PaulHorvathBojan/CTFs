@@ -1,0 +1,17 @@
+inb4 this was rather fun
+1. file tunn3l_v1s1on -> data
+2. vim tunn3l_v1s1on -> very messy
+3. hexeditor tunn3l_v1s1on -> BM in header; can assume the file is a BMP (after a few google searches), and that its DIB header is of type BITMAPINFOHEADER (40 bytes)
+4. Back to tunn3l_v1s10n open in hexeditor:
+	- in the BM header, bytes at 0A/10 offset represent the starting offset of where pixel array starts (offset represented as hex/dec)
+	- in tunn3l_v1s1on, the value is ba d0 (it's little endian but it doesn't matter that much, the point is it's bad-o)
+	- expecting 14 byte BM header + 40 byte DIB header -> offset 54 bytes -> 36 in hex
+	- replace ba d0 with 00 36
+5. Attempt to open tunn3l_v1s1on (used imagemagick) -> image shows notaflag{sorry}.
+6. Back to tunn3l_v1s10n open in kexeditor:
+	- in the BM header, bytes at 02/2 offset represent file size in bytes
+	- current value 8e26 implies 36390 bytes, file size in directory is 2893454 bits/ 361681 bytes -> maybe the whole image is not displayed/ interpreted
+	- in DIB header, bytes at 0e/14 offset represent DIB header size in bytes (again, it's bad0, replace with 0028 - 40 in hex)
+	- back to image size, width is at 12/18 offset, height is at 16/22 offset -> 6e04 little endian width, 3201 little endian height -> 1134 x 306 
+	- after a bit of experimenting, switch height to 3203 and redisplay the image
+7. Flag on image.

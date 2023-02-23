@@ -1,0 +1,3 @@
+1. Open website, open inspector.
+2. Title makes me think of browser cookies, go to cookies inside inspector (Application tab, Storage group on Chrome).
+3. Modify cookie (there is only one) value until flag displays (in my case it was 18).

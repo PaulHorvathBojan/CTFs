@@ -1,0 +1,3 @@
+1. Easy mode: have no idea about ARM assembly, but hint says Simple Compare -> turn first input to hex, wrap around picoCTF{} and submit.
+2. Hard mode: learn ARM assembly and reverse engineer
+3. Intermediate mode: emulate an ARM machine and use that (untested, but I did create a jessie 2017 raspberry pi emulation).

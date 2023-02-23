@@ -1,0 +1,5 @@
+1. Open svg file in browser.
+2. Open inspector.
+3. Expand recursively the second group.
+4. Flag will be at the end of the last expanded elements.
+5. Alternatively, if you pay really close attention and have a very low dpi mouse and steady hands, you can find selectable text in the very middle of the image and copy paste it to get the flag.

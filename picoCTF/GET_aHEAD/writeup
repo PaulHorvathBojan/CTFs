@@ -1,0 +1,4 @@
+1. Open link, inspect element.
+2. Inside body, observe that pressing Red calls GET, and pressing Blue calls POST.
+3. Press either and copy link.
+2. Run 'curl --head http://mercury.picoctf.net:15931/index.php' in terminal -> flag.

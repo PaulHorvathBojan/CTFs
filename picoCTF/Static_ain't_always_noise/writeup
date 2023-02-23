@@ -1,0 +1,4 @@
+1. Run 'vim static' in terminal -> no idea what's inside, quite illegible.
+2. Run 'vim ltdis.sh' in terminal -> looks like it's calling objdump on input file and also extracting strings.
+3. Run 'ltdis.sh static' -> strings file and x86_64 file.
+4. Look inside static.ltdis.string.txt until you find flag. 
