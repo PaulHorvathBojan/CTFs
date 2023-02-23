@@ -1,0 +1,5 @@
+1. Open pcap in Wireshark.
+2. After some struggles, following a TCP stream proved to be helpful.
+3. Follow TCP stream 5, and from the last packet recover "Gur synt vf cvpbPGS{c33xno00_1_f33_h_qrnqorrs}\n".
+4. cvpbPGS looks like a picoCTF-like word under some substitution cipher.
+5. Decode under rot13 -> flag.
