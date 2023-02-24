@@ -1,0 +1,33 @@
+1. No circumventing having ARMv8-a knowledge now (or at least being able to google it and understand what happens).
+2. func:
+	sub sp, sp #32		make room for 4 variables on stack
+	str w0, [sp, 12]	store w0 at stack + 12 (stack + 12 : user input)
+	mov w0, 68		put 68 into w0
+	str w0, [sp, 16]	store w0 at stack + 16 (stack + 16 : 68)
+	mov w0, 2
+	str w0, [sp, 20] 	essentially:
+	mov w0, 3		stack + 20 : 2
+	str w0, [sp, 24]	stack + 24 : 3
+	ldr w0, [sp, 20] 	w0 : 2
+	ldr w1, [sp, 16] 	w1 : 68
+	lsl w0, w1, w0   	w0 : LSHIFT(68, 2) = 272
+	str w0, [sp, 28] 	stack + 28 : 272
+	ldr w1, [sp, 28] 	w1 : 272
+	ldr w0, [sp, 24] 	w0 : 3
+	sdiv w0, w1, w0 	w0 : 272 // 3 = 90
+	str w0, [sp, 28]	sp + 28 : 90
+	ldr w1, [sp, 28] 	w1 : 90
+	ldr w0, [sp, 12] 	w0 : user input
+	sub w0, w1, w0   	w0 : 90 - user input
+	str w0, [sp, 28] 	stack + 28 : 90 - user input
+	ldr w0, [sp, 28] 	w0 : 90 - user input
+	add sp, sp, 32		
+	ret
+3. in main, the following sequence is relevant to the printed result:
+	bl func
+	cmp w0, 0
+	bne .L4 -> .L4 branches to .LC1, which prints "You lose"
+4. To prevent branching to .LC1, w0 must be equal to 0 at that point, hence 90 - user input = 0 <-> user input = 90
+5. Convert 90 to hex and pad with 0s until 32 bits -> flag.
+	
+	
