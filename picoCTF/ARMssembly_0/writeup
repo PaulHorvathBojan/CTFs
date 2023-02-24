@@ -1,3 +1,21 @@
 1. Easy mode: have no idea about ARM assembly, but hint says Simple Compare -> turn first input to hex, wrap around picoCTF{} and submit.
-2. Hard mode: learn ARM assembly and reverse engineer
-3. Intermediate mode: emulate an ARM machine and use that (untested, but I did create a jessie 2017 raspberry pi emulation).
+2. Intermediate mode: emulate an ARM machine and use that (untested, but I did create a jessie 2017 raspberry pi emulation).
+3. Hard mode: Look at the ARMv8-a code and figure out what is happening:
+	a. func1:
+		sub 	sp, sp, #16	makes room on the stack for two variables
+		str 	w0, [sp, 12]	store w0 at stack + 12
+		str	w1, [sp, 8]	store w1 at stack + 8
+		ldr	w1, [sp, 12]	load stack + 12 in w1
+		ldr 	w0, [sp, 8]	load stack + 8 in w0 (essentially last 4 lines seem to perform a swap)
+		cmp	w1, w0		compare by subtracting w0 from w1
+		bls	.L2		branch if less to .L2
+		ldr	w0, [sp, 12]	load stack + 12 into w0
+		b	.L3		goto return
+	   .L2:
+		ldr	w0, [sp + 8]	load stack + 8 into w0
+	   .L3:				essentially reset stack pointer and return
+	   func1 acts as a compare and return highest of w0, w1
+	b. Inside main, w0 is given 4134207980, w1 is given 950176538, and then func1 is called (essentially, skipped some steps).
+	   Turn 4134207980 into hex -> flag.
+		
+		
