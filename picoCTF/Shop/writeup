@@ -1,0 +1,6 @@
+1. Run source for fun. Buy option 3 is Fruitful Flag, and that hints that it may be the flag.
+2. To buy FF, need 100 coins, and we currently only have 40.
+3. The idea is to buy negative amounts.
+4. Connect to mercury.picoctf.net 11371 and buy -6 option 0s.
+5. Buy one option 3.
+6. Slam returned flag into an ASCII to char converter (I used cyberchef) -> flag.
