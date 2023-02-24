@@ -1,0 +1,8 @@
+1. Open website in inspection mode.
+2. Expand recursively elements -> first part of flag at end of body.
+3. Open mycss.css in sources tab -> 2nd part of flag.
+4. Open myjs.js in sources tab -> "How can I keep Google from indexing my website?" 
+5. Edit URL to http://mercury.picoctf.net:27393/robots.txt -> third part of flag.
+7. "I think this is an apache server... can you Access the next flag?" -> change URL to http://mercury.picoctf.net:27393/.htaccess -> 4th part of flag
+8. "I love making websites on my Mac, I can Store a lot of information there" -> change URL to http://mercury.picoctf.net:27393/.DS_Store -> 5th part of flag -> flag.
+
