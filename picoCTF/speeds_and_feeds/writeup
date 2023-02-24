@@ -1,0 +1,3 @@
+1. Connect to mercury.picoctf.net 16524 and put the comm returns into a text file (basic script in folder).
+2. Use a G-code simulator to simulate CNC machine (I used http://nraynaud.github.io/webgcode/).
+3. Paste G-code sim results into flag field.
