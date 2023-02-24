@@ -1,0 +1,9 @@
+1. Open new_caesar.py.
+2. The intuition is, the cryptosystem is a modified version of a Caesar/ ROT cipher.
+3. Encryption works by splitting lowercase letters into halves (first 4 | last 4 bits), storing them as separate entries in a string, then shifting the resulting string entries one by one by the key.
+4. Decryption code:
+	- undo shift by subtracting instead of adding the key value;
+	- undo splitting by combining string entries pairwise.
+5. Run decryption code on all possible key values.
+6. Out of the 16 entries, choose the one with et_tu, wrap around picoCTF -> flag.
+(obs: decryption code inside new_caesar.py; produces decryptions of received cipher upon running)
