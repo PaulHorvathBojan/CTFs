@@ -1,0 +1,13 @@
+1. mv Flag.pdf file
+2. sh file
+3. ar -x flag
+4. cpio -i < flag
+5. bunzip2 flag
+6. mv flag flag.gz | gunzip
+7. lzip -d flag
+8. mv flag.out flag.lz4 | unlz4
+9. mv flag flag.lzma | unlzma
+10. mv flag flag.lzo | lzop -d
+11. lzip -d flag
+12. mv flag.out flag.xz | unxz
+13. cat flag | xxd -x -p -> flag 
