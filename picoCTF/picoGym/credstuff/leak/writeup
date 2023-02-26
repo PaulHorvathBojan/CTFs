@@ -1,0 +1,2 @@
+1. Go to cultiris inside the usernames.txt file (ideally open in some editor that allows for searching and shows line numbers) -- line 378.
+2. Copy line 378 from passwords and use ROT13 on the letters -> flag/
