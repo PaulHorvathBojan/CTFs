@@ -15,7 +15,7 @@ def conn():
         if args.DEBUG:
             gdb.attach(r)
     else:
-        r = remote("addr", 1337)
+        r = remote("mercury.picoctf.net", 36605)
 
     return r
 

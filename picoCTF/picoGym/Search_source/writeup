@@ -1,0 +1,5 @@
+1. Open website.
+2. Tiny disclaimer: I use Google Chrome, and I'm not sure if functionalities directly translate to other browsers.
+3. Right-click + view source on main page; ctrl + f "pico" -> no flag.
+4. Subsequently open all sources; ctrl + f "pico" (or you could perhaps download the page on your machine, open it in a reasonably smart IDE and do a search through all sources).
+5. Flag is in css/style.css source.

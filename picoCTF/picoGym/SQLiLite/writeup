@@ -1,0 +1,3 @@
+Quite straightforward SQL injection.
+1. Put "admin'--" in the login field (no quotes).
+2. Inspect the resulting page -> flag.

