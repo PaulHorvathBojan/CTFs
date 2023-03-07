@@ -1,0 +1,4 @@
+1. Google wiener attack (because dachshund -> wiener dog in American general consciousness; alternatively you can google dachshund attacks and you'll get to the wikipedia article about wiener's attack on the 2nd page of google).
+2. As I really didn't feel like writing the code for the attack, I elected to use RsaCtfTool (quite regularly updated, with a handy github repo).
+3. Connect to nc, get e, n, c.
+4. Plug e, n, c into RsaCtfTool.py with options --uncipher and --attack wiener -> flag (after a number of \x00s).
