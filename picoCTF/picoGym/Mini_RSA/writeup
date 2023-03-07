@@ -1,0 +1,4 @@
+1. The low exponent suggests a direct root would be normally possible, but in this case it is not, as the message was padded to "barely" exceed N.
+2. The word barely suggests one could hypothetically do a brute force.
+3. To not lose precision, use gmpy2.
+4. Script used is in scr.py; run script -> flag (ignore the appended spaces).
