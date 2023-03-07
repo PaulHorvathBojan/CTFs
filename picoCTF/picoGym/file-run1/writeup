@@ -1,0 +1,2 @@
+1. Run chmod 777 run in terminal (not actually needed as full 777, but I overdid it).
+2. Run ./run in terminal -> flag.
