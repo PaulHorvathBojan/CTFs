@@ -1,0 +1,6 @@
+1. Trivial Flag Transfer Protocol -> TFTP; would suggest to look at packets inside Wireshark and extract tftp objects.
+2. Store them in some folder.
+3. Inside instructions.txt get some apparently random text, use rot13 -> something about how tftp does not encrypt traffic.
+4. Inside plan file get some other apparently random text, use rot13 -> IUSEDTHEPROGRAMWITH-DUEDILIGENCE.CHECKOUTTHEPHOTOS.
+5. Unpack program.deb (I used alien) -> get some steghide-smth-smth, which would suggest using steghide on the photos.
+6. Run in terminal "steghide extract -sf" on the 3 pictures, and when prompted for password, input DUEDILIGENCE -> flag.txt.
