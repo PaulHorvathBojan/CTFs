@@ -1,0 +1,3 @@
+1. Pretty straightforward, look inside the source code of VaultDoor1.java.
+2. Access granted if password is d35cr4mbl3_tH3_cH4r4cT3r5_ + some user-specific jumble.
+3. Wrap around picoCTF{} -> flag.
