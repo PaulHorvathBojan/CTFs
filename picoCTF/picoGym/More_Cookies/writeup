@@ -1,0 +1,6 @@
+1. I'll be honest, after I did my master thesis on applying fully-homomorphic encryptoin, I expected going to the wikipedia page on homomorphic encryption would not help at all without further knowledge.
+2. Unless you can at least guess or infer the cryptosystem used for encryption, nothing will work.
+3. Challenge description says "Cookies can Be modified Client-side", among other things, with precisely CBC capitalized -> can reasonably safely assume we're talking about AES-CBC (if it's DES, you could probably crack it as is with some effort, and hints suggest you can't).
+4. In good keeping with picoCTF tradition, assume this is similar to other challenges, and hence the cookie would be something of form admin=0 (or it contains this), and we would have to switch the 0 to a 1.
+5. Google "flip bit aes cbc" or similar, idk.
+6. 
