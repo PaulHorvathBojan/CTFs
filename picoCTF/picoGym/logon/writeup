@@ -1,0 +1,2 @@
+1. Login as Joe';-- (or some other user without need for SQL injection).
+2. Check cookies, change admin to True and refresh -> flag.
