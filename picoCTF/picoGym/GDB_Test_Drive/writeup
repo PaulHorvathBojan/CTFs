@@ -1,0 +1,3 @@
+1. Open in gdb (I have gef, and I'm not sure exactly why but it's very bad for calling layout asm inside gdb).
+2. If you really want to see the assembly version, maybe just call disassemble main.
+3. Call the other commands in the order in the description -> flag.
