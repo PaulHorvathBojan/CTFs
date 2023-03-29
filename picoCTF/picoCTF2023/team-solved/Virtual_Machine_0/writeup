@@ -1,0 +1,2 @@
+1. Pop Virtual-Machine0.dae into a DAE viewer and inspect red vs blue wheel radius ratio (surprise, it's 5).
+2. With python script: convert result to hex, strip initial 0x, back to ascii, decode -> flag.

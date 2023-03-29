@@ -1,0 +1,7 @@
+1. After attempting to use knowledge previously gained in RG0 and RG1, I tried to code a thing myself.
+2. Then I tried to copy successful warriors from the internet (most successful was Steve Gurnell's Dark and Stormy with a max of 97 wins, and an average around 91). I will not claim to know what most of them are doing.
+3. Then, I started the deep dive into redcode.
+4. A single resource gives code for an impgate -- essentially a static warrior that keeps an eye on its position -10, and jumps there when an imp passes.
+5. Submit the impgate to the server -> flag.
+
+PS: Will leave the "warrior trove" inside this folder for posterity. The script for the imp gate is in impgate.red.

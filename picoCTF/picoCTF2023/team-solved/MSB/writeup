@@ -1,0 +1,2 @@
+1. Use steganography (I used https://stegonline.georgeom.net/extract) tool to extract Don Quixote text from image.
+2. grep pico -> flag

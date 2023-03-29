@@ -1,0 +1,2 @@
+1. Connect to server as user (ssh -p PORT_NO user@server).
+2. Go to "/" (cd ../..), run "cd challenge", there will be a metadata.json; cat metadata.json -> flag.

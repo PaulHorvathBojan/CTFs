@@ -1,0 +1,12 @@
+1. Essentially encryption does not matter (looking inside the source, the ciphertext is "thrown away" at the end, i.e., value None given to it before program ends).
+2. What the program does is as follows:
+	- create a hardcoded tuple of values (named SBox, but it doesn't matter, might just as well be john)
+	- take input data and key byte by byte, and bytewise xor them to create an index 
+	- retrieve the value of SBox[index] and store its least significant bit inside leaky_buf
+	- count the number of 1 values and print them
+3. Steps:
+	a. give it all 0s, count the 1s
+	b. subsequently increment the first byte to check how the counter of 1s changes
+	c. collect the LSBs in a separate file because a single 15-minute round of connection is not enough to cycle through all the possibilities
+	d. repeat for all the possible 16 bytes of ciphertext (collection script inside lsbs.py, as it should be initialized for the first time connection)
+	e. after all the LSBs are collected, compare the results with all possible bytes to see which would be suitable candidates for the bytes of the key (key deduction script inside keydeduction.py) -> flag

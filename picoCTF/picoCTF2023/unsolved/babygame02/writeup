@@ -1,0 +1,4 @@
+1. 367 'a' characters cause no segfault when input in the program, 368 do.
+2. After decompilation in ghidra, the program shows a "win" function that prints the flag.
+3. "win" is not called from "main" in case of reaching the end (or any other case, really, there is no call to "win" from "main").
+4. Idea: build a buffer overflow attack to overwrite EIP with a call to the "win" function.
