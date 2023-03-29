@@ -1,0 +1,6 @@
+1. Start by opening the code and doing a bit of first glance inspection.
+2. The first thing that is easy to see is that the password must be 12 chars in length.
+3. Second, it is split into three slices of 4 chars.
+4. Then, some XORs are performed on the blocks.
+5. Copy the part that crafts the final string into a js interpreter, have it print the crafted string instead of comparing with the hardcoded value, and pass the hardcoded value to it.
+6. Plug the result in the curl -> flag.
