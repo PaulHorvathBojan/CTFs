@@ -1,0 +1,2 @@
+1. Open easy_auth.js, copy the const password from line 13 and put it into cyberchef (on magic, but it's really a quick fromDecimal).
+2. Paste resulting string into the given curl as payload and call the command in terminal -> flag.
